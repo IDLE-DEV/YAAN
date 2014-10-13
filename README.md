@@ -1,4 +1,4 @@
 YAAN
 ====
 
-Awesomeness. Yet another awesome notes.
+Just my notes which I found awesome.
