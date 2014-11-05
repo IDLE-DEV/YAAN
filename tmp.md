@@ -1,9 +1,7 @@
 # Bit of docs.
----------
 ## Custom objects
----------
 ### Workplace *[Workplace__c]*
-&nbsp;
+
 > Используется для второй авторизации пользователей.
 
 #### Поля:
@@ -15,9 +13,8 @@
 
 > В очереди используются только экземпляры `Workplace__c` со значением `Operator` поля `Type__c`
 
----------
 ### Session *[Session__c]*
-&nbsp;
+
 > Используется для учета активных пользователей в текущий момент для второй авторизации.
 
 #### Поля:
@@ -26,9 +23,8 @@
 - *User_Name__c* [Text(255)]
 - *Workplace__c* [Lookup(Workplace)]
 
----------
 ### Activity *[Activity__c]*
-&nbsp;
+
 > Используется для связи конкретного оператора с конкретной задачей.
 
 #### Поля:
@@ -39,9 +35,8 @@
 - *Type__c* [Text(100)]
 - *Workplace__c* [Lookup(Workplace)]
 
----------
 ### Message *[Message__c]*
-&nbsp;
+
 > Используется как универсальный объект для хранения сообщений с различных источников. Источники разграничиваются с помощью RecordType-ов.
 
 #### Поля:
@@ -69,11 +64,9 @@
 - *Regular Message* [Just regular message with all fields.]
 - *Skype* [Record type for Skype messages.]
 
----------
 ## Custom settings
-----------
 ### Redirect Settings *[RedirectSettings__c]*
-&nbsp;
+
 >Используются для редиректов при нажатии кнопки `Начать` на странице оператора.
 
 #### Поля:
@@ -92,9 +85,8 @@ Key = "Default"
 Target = "https://cs17.salesforce.com/003/e"
 ```
 
-----------
 ### Key-Value Settings *[KVSettings__c]*
-&nbsp;
+
 >Используются как хранилище типа ключ-значение для более гибкой настройки(без изменение кода классов и триггеров).
 
 #### Поля:
@@ -144,5 +136,3 @@ Value = "00520000003HCWX" //ID of SF User
 Key = "MessageQueue" //
 Value = "00Gg0000000eFPxEAM" //Queue ID
 ```
-
-----------
